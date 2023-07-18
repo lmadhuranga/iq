@@ -102,16 +102,8 @@ It generally includes a web server that communicates with a database to serve re
 HTML, CSS, JavaScript, AngularJS, and ReactJS are some of the essentials of frontend development
 
 Java, PHP, Python, and Node.js are some of the backend development technologies 
+
  
-### 11. What is NPM?
-
-NPM stands for Node Package Manager, responsible for managing all the packages and modules for Node.js.
-
-Node Package Manager provides two main functionalities:
-
--   Provides online repositories for node.js packages/modules, which are searchable on search.nodejs.org
--   Provides command-line utility to install Node.js packages and also manages Node.js versions and dependencies
-
 ### 12. What are the modules in Node.js?
 
 Modules are like JavaScript libraries that can be used in a Node.js application to include a set of functions. To include a module in a Node.js application, use the  **require()**  function with the parentheses containing the module's name.
@@ -626,29 +618,13 @@ In Node.js, the DNS module provides methods for performing DNS lookups. DNS stan
 
 ### 105. What is the difference between setImmediate() and setTimeout()?
 
-The setTimeout() method schedules code execution after a specified delay, measured in milliseconds. On the other hand, the setImmediate() method schedules code execution to occur immediately after the current event loop iteration completes. This means that setImmediate() has a higher priority than setTimeout().
-
-
+The setTimeout() method schedules code execution after a specified delay, measured in milliseconds. On the other hand, 
+the setImmediate() method schedules code execution to occur immediately after the current event loop iteration completes. This means that setImmediate() has a higher priority than setTimeout().
+ 
 ### 107. Does Node.js provide any Debugger?
 
 Yes, Node.js provides a built-in debugger that can be used to debug Node.js applications.
 
 ### 108. Is cryptography supported in Node.js?
 
-Yes, Node.js provides built-in support for cryptography through the crypto module.
-
-### 109. Why do you think you are the right fit for this Node.js role?
-
-As a Node.js developer, I have experience in building scalable and efficient server-side applications using Node.js. I am a team player and have excellent communication skills. I believe that my experience and skills make me a strong candidate for this Node.js role.
-
-### 110. Do you have any past Node.js work experience?
-
-Yes, my past Node.js work experience has given me a solid foundation in building scalable and efficient server-side applications using Node.js.
-
-### 111. Do you have any experience working in the same industry as ours?
-
-Yes, I have worked on several Node.js projects in the past.
-
-### 112. Do you have any certification to boost your candidature for this Node.js role?
-
-Yes, I am OpenJS Node. Js Services Developer (JSNSD) Certified.
+Yes, Node.js provides built-in support for cryptography through the crypto module. 
