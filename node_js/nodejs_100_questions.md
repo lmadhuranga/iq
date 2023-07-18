@@ -16,6 +16,18 @@ Node.js has a vast and active community, with a rich ecosystem of packages and m
 
 Overall, Node.js is a versatile runtime that can be used in a wide range of applications and scenarios where a scalable and efficient server-side environment is required.
 
+
+### How is Node.js most frequently used?
+
+Node.js is widely used in the following applications:
+
+1.  Real-time chats
+2.  Internet of Things
+3.  Complex SPAs (Single-Page Applications)
+4.  Real-time collaboration tools
+5.  Streaming applications
+6.  Microservices architecture
+
 ### 2. Why use Node.js?
 Node.js makes building scalable network programs easy. Some of its advantages include:
 
@@ -68,16 +80,6 @@ A callback function is called after a given task. It allows other code to be run
 
 ![io](https://www.simplilearn.com/ice9/free_resources_article_thumb/io.JPG)
 
-### 9. How is Node.js most frequently used?
-
-Node.js is widely used in the following applications:
-
-1.  Real-time chats
-2.  Internet of Things
-3.  Complex SPAs (Single-Page Applications)
-4.  Real-time collaboration tools
-5.  Streaming applications
-6.  Microservices architecture
 
 ### 10. Explain the difference between frontend and backend development?
 
@@ -626,9 +628,6 @@ In Node.js, the DNS module provides methods for performing DNS lookups. DNS stan
 
 The setTimeout() method schedules code execution after a specified delay, measured in milliseconds. On the other hand, the setImmediate() method schedules code execution to occur immediately after the current event loop iteration completes. This means that setImmediate() has a higher priority than setTimeout().
 
-### 106. Explain the concept of Punycode in Node.js.
-
-Punycode is a character encoding scheme used in the domain name system (DNS) to represent Unicode characters with ASCII characters. It is used to encode domain names that contain non-ASCII characters, such as Chinese or Arabic characters.
 
 ### 107. Does Node.js provide any Debugger?
 
