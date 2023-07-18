@@ -692,4 +692,3 @@ Yes, I have worked on several Node.js projects in the past.
 ### 112. Do you have any certification to boost your candidature for this Node.js role?
 
 Yes, I am OpenJS Node. Js Services Developer (JSNSD) Certified.
- 
