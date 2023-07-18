@@ -163,36 +163,11 @@ Some of the reasons why Node.js is preferred include:
 -   Perfect for data-intensive, real-time web applications, as Node.js never waits for an API to return data
 -   Better synchronization of code between server and client due to same code base
 -   Easy for web developers to start using Node.js in their projects as it is a JavaScript library
-
-### 15. What is the difference between Angular and Node.js?
-
-**Angular**
-
-**Node.js**
-
-It is a [frontend development](https://www.simplilearn.com/how-to-become-a-front-end-developer-article "frontend development")  framework
-
-It is a server-side environment
-
-It is written in [TypeScript](https://www.simplilearn.com/tutorials/programming-tutorial/advanced-typescript "TypeScript")
-
-It is written in  [C, C++ languages](https://www.simplilearn.com/tutorials/cpp-tutorial/difference-between-c-and-cpp "C, C++ languages")
-
-Used for building single-page, client-side web applications
-
-Used for building fast and scalable server-side networking applications
-
-Splits a web application into MVC components
-
-Generates database queries
-
-**Also Read:  [What is Angular?](https://www.simplilearn.com/tutorials/angular-tutorial/what-is-angular "What is Angular?")**
-
+ 
 ### 16. Which database is more popularly used with Node.js?
 
 [MongoDB](https://www.simplilearn.com/tutorials/mongodb-tutorial "MongoDB")  is the most common database used with Node.js.  [It is a NoSQL](https://www.simplilearn.com/rise-of-nosql-and-why-it-should-matter-to-you-article "It is a NoSQL"), cross-platform, document-oriented database that provides high performance, high availability, and easy scalability.
 
- 
 ### 17. What are some of the most commonly used libraries in Node.js?
 
 There are two commonly used libraries in Node.js:
@@ -221,6 +196,7 @@ Dealing with relational databases is not a good option for Node.js
 Best suited for streaming huge amounts of data and I/O intensive operations
 
 Since Node.js is single-threaded, CPU intensive tasks are not its strong suit
+
 
 ### 19. What is the command used to import external libraries?
 
