@@ -495,30 +495,24 @@ An asynchronous queue in Node.js is a data structure that allows for the executi
 
 ### 66. Are there any disadvantages to using Node.js?
 
-Node.Js is not suitable for CPU-intensive tasks. This is because Node.js is single-threaded, meaning it can only execute one task at a time. Node.js is not suitable for applications that require a lot of memory. This is because Node.js uses a lot of memory for each connection. If you have a large number of connections, it can quickly consume a lot of memory.
+Node.Js is not suitable for CPU-intensive tasks.
+This is because Node.js is single-threaded, meaning it can only execute one task at a time. 
+Node.js is not suitable for applications that require a lot of memory. 
+This is because Node.js uses a lot of memory for each connection.
+If you have a large number of connections, it can quickly consume a lot of memory.
 
 ### 67. What is the primary reason for using the event-based model in Node.js?
 
-The main reason to use the event-based model in Node.js is performance. The event-based model allows for non-blocking I/O operations, which means that Node.js can handle a large number of connections without using a lot of resources.
-
-### 68. What is the difference between Node.js and Ajax?
-
-Ajax and Node.js are two different technologies that are used for different purposes. Ajax is a client-side technology that allows for asynchronous communication between the client and the server. It is typically used to update parts of a web page without requiring a full page reload.
-
-Node.js, on the other hand, is a server-side technology that is used for building fast, scalable, and efficient server-side applications. It is typically used for real-time applications, such as chat applications, online games, and streaming services.
+ Node.js is performance. The event-based model allows for non-blocking I/O operations, which means that Node.js can handle a large number of connections without using a lot of resources.
+ 
 
 ### 69. What is the advantage of using Node.js?
 
-Node.js is fast and scalable. Node.js is easy to learn and use. Node.js is well-suited for real-time applications, such as chat applications, online games, and streaming services. This is because Node.js can handle a large number of connections and can perform non-blocking I/O operations, which makes it ideal for real-time communication.
-
-### 70. Does Node run on Windows?
-
-Yes, Node.js runs on Windows. Node.js is a cross-platform runtime environment, which means that it can run on a variety of operating systems, including Windows, macOS, and Linux. 
-
-### 71. Can you access DOM in Node?
-
-No, you cannot access the DOM in Node.js. The DOM is a browser-specific API that allows for the manipulation of HTML and XML documents. Since Node.js does not run in a browser, it does not have access to the DOM.
-
+- Node.js is fast and scalable.
+- Node.js is easy to learn and use. 
+- Node.js is well-suited for real-time applications, such as chat applications, online games, and streaming services. 
+- This is because Node.js can handle a large number of connections and can perform non-blocking I/O operations, which makes it ideal for real-time communication.
+ 
 ### 72. Why is Node.JS quickly gaining attention from JAVA programmers?
 
 Node.js is quickly gaining attention from Java programmers because it is fast, scalable, and efficient. Java is a popular server-side technology, but it can be slow and resource-intensive. Node.js, on the other hand, is built on the V8 JavaScript engine, which is known for its speed and performance.
