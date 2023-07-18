@@ -550,19 +550,7 @@ Express is a great choice for building web applications in Node.js, and its popu
 ### 85. What is the use of the connect module in Node.js?
 
 The Connect module can be used to handle different types of middleware, such as error-handling middleware, cookie-parsing middleware, and session middleware. Error-handling middleware is used to handle errors that occur during the request/response cycle. Cookie parsing middleware is used to parse cookies from the request header. Session middleware is used to manage user sessions.
-
-### 86. What's the difference between 'front-end' and 'back-end' development?
-
-Front-end developers focus on the client side of the application, while back-end developers focus on the server side of the application. Both roles are important for building a successful web application and require different skill sets and expertise.
-
-### 87. What are LTS releases of Node.js?
-
-LTS stands for Long-term support. LTS releases of Node.js are versions that are supported for an extended period, usually for 30 months from the time of release. These releases are typically more stable and reliable than non-LTS releases and are recommended for production use.
-
-### 88. What do you understand about ESLint?
-
-ESLint is a popular open-source tool that is used to analyze and flag errors and potential problems in JavaScript code.
-
+ 
 ### 89. Define the concept of the test pyramid. Please explain the process of implementing them in terms of HTTP APIs.
 
 The test pyramid is a concept that is often used in software testing to illustrate the ideal distribution of different types of tests. The pyramid consists of three layers: unit tests, integration tests, and end-to-end tests. The idea is that the majority of tests should be at the unit level, with fewer tests at the integration and end-to-end levels.
@@ -606,22 +594,25 @@ There are four types of streams available in Node.js, including readable streams
 ### 98. What is meant by tracing in Node.js?
 
 Tracing is a technique used in Node.js to profile the performance of an application. It involves recording the function calls and events that occur during the execution of the application and analyzing the data to identify performance bottlenecks.
-
-### 99. Where is package.json used in Node.js?
-
-The package.json file is located in the root directory of an application and it is used by the npm package manager to install and manage the dependencies of an application.
-
+ 
 ### 100. What is the difference between readFile and create Read Stream in Node.js?
 
 Create Read Stream is a better option for reading large files, while the read file is a better option for small files. It is important to choose the right method based on the size of the file and the requirements of the application.
 
 ### 101. What is the use of the crypto module in Node.js?
 
-The crypto module is widely used in Node.js applications to generate secure random numbers, create digital signatures, and verify signatures. It also provides support for various encryption algorithms such as AES, DES, and RSA.
+generate secure random numbers, 
+create digital signatures,
+verify signatures.
+It also provides support for various encryption algorithms such as AES, DES, and RSA.
 
 ### 102. What is a passport in Node.js?
 
-Passport is a popular authentication middleware for Node.js. It provides a simple and modular way to implement authentication in Node.js applications. Passport supports many authentication mechanisms, including username/password, social logins like Facebook and Google, and JSON Web Tokens (JWTs).
+Passport is a popular authentication middleware for Node.js. 
+It provides a simple and modular way to implement authentication in Node.js applications. Passport supports many authentication mechanisms, 
+- username/password, 
+- social logins like Facebook and Google, 
+- JSON Web Tokens (JWTs).
 
 ### 103. How to get information about a file in Node.js?
 
