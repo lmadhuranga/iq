@@ -200,7 +200,7 @@ Now that we have covered some of the important beginner-level Node.js interview 
 
 ![varhttp](https://www.simplilearn.com/ice9/free_resources_article_thumb/varhttp.JPG)
 
-## Node.js Interview Questions and Answers For Intermediate Level
+## Node.js Questions and Answers For Intermediate Level
 
 ### 20. What does event-driven programming mean?
 
@@ -299,7 +299,7 @@ A callback is a function called after a given task. This prevents any blocking a
 
 In the last section, we will now cover some of the advanced-level Node.js interview questions.
 
-## Node.js Interview Questions and Answers For Experienced Professionals
+## Node.js Questions and Answers For Experienced Professionals
 
 This section will provide you with the Advanced Node.js interview questions which will primarily help experienced professionals.
 
