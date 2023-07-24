@@ -27,7 +27,7 @@ server.listen(3000, 'localhost', () => {
 ```
 
 5. What is **callback hell**? How can it be avoided in Node.js?
-Callback hell refers to the situation when **callbacks are nested within each other**, leading to difficult-to-read and maintain code. It often occurs when dealing with **asynchronous operations.** To avoid callback hell, you can use techniques like Promises, async/await, or libraries like `async.js` or `bluebird` to handle asynchronous code in a more structured and readable way.
+Callback hell refers to the situation when **callbacks are nested within each other**, leading to **difficult-to-read and maintain code**. It often occurs when dealing with **asynchronous operations.** To avoid callback hell, you can use techniques like Promises, async/await, or libraries like `async.js` or `bluebird` to handle asynchronous code in a more structured and readable way.
 
 6. How does Node.js handle asynchronous code?
 Node.js uses an event-driven, non-blocking I/O model to handle asynchronous code. It employs callbacks, Promises, and async/await to manage asynchronous operations effectively without blocking the execution of other tasks.
