@@ -57,7 +57,7 @@ Sure, here are some examples of pure pipes in Angular:
 
 Pure pipes are stateless and only execute their `transform` method when their input values change. This makes them efficient for scenarios where the data is not frequently changing, as they avoid unnecessary recalculations and improve performance.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 Sure, here are some examples of impure pipes in Angular:
 
