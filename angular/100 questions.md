@@ -9,7 +9,7 @@ Let’s start with the basic Angular questions and answers for freshers.
 
 ### **2. What are the technologies used in Angular?**
 
-Angular is a modern front-end JavaScript framework developed by Google. Angular itself makes use of several technologies for several reasons to accomplish certain tasks easily as well as to allow developers to have a better experience while developing applications with it. Angular uses TypeScript, which is a superscript of JavaScript. So, any valid JavaScript is a valid TypeScript. However, TypeScript allows us to write JavaScript as a strongly typed language, and we can define our own types as well, which makes catching bugs much easier. It also uses RxJS, which allows developers to better deal with asynchronous operations.
+ Angular uses **TypeScript**, which is a superscript of JavaScript. So, any valid JavaScript is a valid TypeScript. However, TypeScript allows us to write JavaScript as a **strongly typed language**, and we can define our own types as well, which makes **catching bugs much easier**. It also uses RxJS, which allows developers to better deal with asynchronous operations.
 
 ### **3. Why were client-side frameworks like Angular introduced?**
 
@@ -33,9 +33,8 @@ An Angular application operates according to the principles of a client-side web
 -   **Compilation and Bundling**: Before deployment, an Angular application is typically compiled and bundled. This process optimizes performance by reducing file sizes and merging multiple files into a single bundle.
 -   **Deployment**: Following bundling, the application can be deployed to a web server or hosting service, making it accessible to users.  
 
-### **5. What is TypeScript?**
-
-The  [TypeScript](https://intellipaat.com/blog/what-is-typescript/)  feature offered by Angular is preferred by a majority of Front-End Developers. TypeScript helps in efficiently detecting bugs and helps in easy compilation by its automatic populating functionality. Also, it offers rich interfaces, access modifiers, hybrid types etc. All these combined lead to reduction in the developing time.
+### **5. What is TypeScript?** 
+TypeScript helps in **efficiently detecting bugs** and helps in easy compilation by its automatic populating functionality. Also, it offers rich interfaces, access modifiers, hybrid types etc. All these combined lead to **reduction in the developing** time.
 
 ### **6. Write a pictorial diagram of Angular architecture?**
 
@@ -53,7 +52,7 @@ The  [TypeScript](https://intellipaat.com/blog/what-is-typescript/)  feature off
 
 ### **7. What is metadata?**
 
-Using metadata is how we tell Angular how to process a class. When we use a component, it acts as a class unless we tell that it’s a component, and we do this with the help of metadata. Metadata is attached in TypeScript using a decorator. Decorators are functions that know the configuration of classes and how they are supposed to work.
+Using metadata is how we tell Angular how to process a class. When we use a component, it acts as a class unless we tell that it’s a component, and we do this with the help of metadata. Metadata is attached in TypeScript using a decorator. Decorators are functions that know **the configuration of classes and how they are supposed to work.**
 
 ### **8. What is the difference between constructor and ngOnInit?**
 
@@ -95,11 +94,11 @@ The async pipe’s purpose is to mark the components that need to be checked for
 
 ### **11. What is the option to choose between inline and external templates?**
 
-Usually, inline templates are used for small codes and external templates are used for comparatively bigger views. However, the choice of inline or external templates is sometimes based on organizational policy, situations etc.
+Usually, inline templates are used for **small codes** and external templates are used for comparatively **bigger views**. However, the choice of inline or external templates is sometimes based on organizational policy, situations etc.
 
 ### **12. What is the purpose of the ‘ngFor’ directive?**
 
-The purpose of the ‘ngFor’ directive in Angular is to iterate over a collection or an array and generate repetitive HTML elements or components based on each item in the collection. It allows for dynamic rendering of content by repeating a template block for each item in the specified collection. The ‘ngFor’ directive is commonly used to display lists, tables, or any other structured data where repetitive rendering is required. It provides a convenient way to handle and manipulate collections of data in Angular templates.
+The purpose of the ‘ngFor’ directive in Angular is to iterate over a **collection or an array and generate repetitive HTML elements** or components based on each item in the collection. It allows for dynamic rendering of content by repeating a template block for each item in the specified collection. The ‘ngFor’ directive is commonly used to display lists, tables, or any other structured data where repetitive rendering is required. It provides a convenient way to handle and manipulate collections of data in Angular templates.
 
 ### **13. What is the purpose of the ngIf directive?**
 
