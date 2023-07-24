@@ -1,4 +1,4 @@
-Certainly! Here is a list of some of the most commonly used decorators in Angular, along with examples for each:
+Meta data - decorators in Angular, along with examples for each:
 
 1. **@Component:**
 As mentioned earlier, the `@Component` decorator is used to define and configure Angular components.
