@@ -667,12 +667,35 @@ SPA stands for Single Page Application. This technology only maintains one page,
 
 ### **86. Explain the different kinds of Angular directives.**
 
-**There are three kinds of directives in Angular. Let’s discuss them:**
-
--   **Components**: A component is simply a directive with a template. It is used to define a single piece of the user interface using TypeScript code, CSS styles, and the HTML template. When we define a component, we use the component decorated with the **@** symbol and pass in an object with a selector attribute. The selector attribute gives the Angular compiler the HTML tag that the component is associated with so that now when it encounters this tag in HTML, it knows to replace it with the component template.
--   **Structural:** Structural directives are used to change the structure of a view. For example, if we wish to show or hide some data based on some property, we can do so by using the **ngIf** directive, or if we wish to add a list of data in the markup, we can use ***ngFor,** and so on. These directives are called structural directives because they change the structure of the template.
--   **Attribute**: Attribute directives change the appearance or behavior of an element, component, or another directive. They are used as the attributes of elements. Directives such as **ngClass** and **ngStyle** are attribute directives.  
-     
+```
++-----------------------+-----------------------------------------------+---------------------------------+
+| Kind of Directive     | Description                                   | Examples                        |
++-----------------------+-----------------------------------------------+---------------------------------+
+| Components            | Directives with templates that define       | - Angular components decorated  |
+|                       | a single piece of the user interface.       |   with @Component().            |
+|                       |                                               | - Each component has a         |
+|                       |                                               |   TypeScript code, CSS styles,  |
+|                       |                                               |   and an HTML template.         |
++-----------------------+-----------------------------------------------+---------------------------------+
+| Structural Directives | Directives that change the structure        | - *ngIf: Conditionally renders  |
+|                       | of the view by adding or removing elements  |   elements based on a          |
+|                       | from the DOM.                                 |   condition.                    |
+|                       |                                               | - *ngFor: Repeats a template   |
+|                       |                                               |   for each item in a data      |
+|                       |                                               |   array.                        |
+|                       |                                               | - *ngSwitch: Conditionally     |
+|                       |                                               |   includes one of several      |
+|                       |                                               |   templates based on a value.  |
++-----------------------+-----------------------------------------------+---------------------------------+
+| Attribute Directives  | Directives that modify the appearance or    | - ngClass: Adds or removes     |
+|                       | behavior of an element, component, or       |   CSS classes based on         |
+|                       | another directive.                           |   conditions.                   |
+|                       |                                               | - ngStyle: Sets CSS styles     |
+|                       |                                               |   based on expressions.        |
+|                       |                                               | - Custom attribute directives  |
+|                       |                                               |   created by the developers.   |
++-----------------------+-----------------------------------------------+---------------------------------+
+```     
 
 ### **87. What are the different types of compilers used in Angular?**
 
