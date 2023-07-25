@@ -373,42 +373,13 @@ In Angular, Content projection refers to a pattern where you can insert, or proj
 
 ### **36. What is the difference between PROMISE & OBSERVABLES?**
 
-**Basis**
-
-**OBSERVABLES**
-
-**PROMISE**
-
-**Values**
-
-Observables have the capacity to emit multiple values over a given period of time.
-
-A promise emits only a single value over a given period of time.
-
-**Execution**
-
-They can be executed only when subscribed using subscribe() method.
-
-Promises can be executed as soon as they get created.
-
-**Cancellation**
-
-Observables are cancellable as they consist of subscriptions that can be cancelled using the unsubscribe() method.
-
-Promises once executed are non cancellable.
-
-**Operations**
-
-Can provide operations like map for forEach, filter, reduce, retry, and retryWhen operators.
-
-Promises do not offer any operations.
-
-**Errors**
-
-An observable pushes the errors to the subscribers
-
-A promise pushes the errors to the child promises.
-
+| Basis       | Observables                                            | Promises                                               |
+|-------------|--------------------------------------------------------|--------------------------------------------------------|
+| Values      | Observables have the capacity to emit multiple values over a given period of time. | A promise emits only a single value over a given period of time. |
+| Execution   | They can be executed only when subscribed using the `subscribe()` method. | Promises can be executed as soon as they get created. |
+| Cancellation| Observables are cancellable as they consist of subscriptions that can be cancelled using the `unsubscribe()` method. | Promises once executed are non-cancellable. |
+| Operations  | Can provide operations like `map`, `forEach`, `filter`, `reduce`, `retry`, and `retryWhen` operators. | Promises do not offer any operations. |
+| Errors      | An observable pushes the errors to the subscribers. | A promise pushes the errors to the child promises. |
 ### **37. What do you mean by data binding?**
 
 In Angular, data binding refers to the mechanism of establishing a connection between the component’s data (model) and the user interface (view) elements. It allows for the automatic synchronization and communication of data between the component and the template.
