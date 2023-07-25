@@ -557,30 +557,23 @@ After logging in, users have various types and levels of access—some can acces
 
 Digest cycle in Angular is the process in which the watch list is monitored to track changes in the watch variable value. In each digest cycle, there is a comparison between the present and the previous versions of the scope model values.
 
-### **65. What are the distinct types of Angular filters?**
+### **65. What are the distinct types of Angular PIPES?**
 
-Filters are a part of Angular that helps in formatting the expression value to show it to the user. They can be added to services, directives, templates, or controllers. You also have the option to create personalized filters as per requirements. These filters allow you to organize the data easily such that only the data that meets the respective criteria are displayed. Filters are placed after the pipe symbol ( | ) while used in expressions.
+Sure! Here's a summary of Angular PIPES presented in a table:
 
-**Various types of filters in Angular are mentioned below:**
+| PIPES       | Description                                             | Example Usage                                       |
+|--------------|---------------------------------------------------------|-----------------------------------------------------|
+| currency     | Converts numbers to the currency format based on the locale and currency symbol. | `{{ price | currency }}`                            |
+| filter       | Selects a subset of items from an array that match a specified criteria or filter function. | `{{ items | filter: searchText }}`                 |
+| date         | Converts a date into a specific format for user-friendly display. | `{{ date | date: 'dd/MM/yyyy' }}`                  |
+| lowercase    | Converts a given string to lowercase.                   | `{{ text | lowercase }}`                           |
+| uppercase    | Converts a given string to uppercase.                   | `{{ text | uppercase }}`                           |
+| orderBy      | Arranges an array of objects based on a specified expression or property. | `{{ items | orderBy: 'name' }}`                    |
+| json         | Formats any JavaScript object into a JSON string for displaying or debugging purposes. | `{{ data | json }}`                                |
+| number       | Converts a number value into a string representation with optional precision and formatting. | `{{ value | number: '1.2-3' }}`                    |
+| limitTo      | Restricts the number of elements shown in an array or the length of a string. | `{{ text | limitTo: 50 }}`                         |
 
-**currency**: It converts numbers to the currency format
-
-**filter**: It selects a subset containing items from the given array
-
-**date**: It converts a date into a necessary format
-
-**lowercase**: It converts the given string into lowercase
-
-**uppercase**: It converts the given string into uppercase
-
-**orderBy**: It arranges an array by the given expression
-
-**json**: It formats any object into a JSON string
-
-**number**: It converts a number value into a string
-
-**limitTo**: It restricts the limit of a given string or array to a particular number of elements or strings
-
+These filters are used in Angular templates to transform and format data before displaying it to the user. They are applied using the pipe symbol (|) in Angular expressions. The filters offer various functionalities to make data presentation more organized and user-friendly.
 ### **66. How can one create a service in Angular?**
 
 A service in Angular is an object that can be substituted. It is wired and combined with the help of dependency injection. Services are developed by getting registered in a module that they need to be executed in. The three methods of creating a service in Angular are as follows:
