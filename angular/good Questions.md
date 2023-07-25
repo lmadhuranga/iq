@@ -1,0 +1,35 @@
+### **What are Angular building blocks?**
+
+**The following building blocks play a crucial role in Angular:**
+
+-   **Components**: A component can control numerous views wherein each of the views is a particular part on the screen. All Angular applications have a minimum of one component called the root component. This component is bootstrapped in the root module, the main module. All the components include the logic of the application that is defined in a class, while the main role of the class is to interact with the view using an API of functions and properties.
+-   **Data binding**: Data binding is the process in which the various sections of a template interact with the component. The binding markup needs to be added to the HTML template so that Angular can understand how it can connect with the component and template.
+-   **Dependency injection**: It uses DI so that it can offer the necessary dependencies: mainly services, to the new components. The constructor parameters of a component inform Angular regarding the numerous services needed by the component, and DI provides a solution that gives the necessary dependencies to the new class instances.
+-   [**Directives**](https://intellipaat.com/blog/tutorial/angularjs-tutorial/angularjs-directives/): Angular templates are of a dynamic nature, and directives help Angular understand how it can transform the DOM while manifesting the template.
+-   **Metadata**: Classes have metadata attached to them with the help of decorators so that Angular will have an idea of processing the class.
+-   **[Modules](https://intellipaat.com/blog/tutorial/angularjs-tutorial/angularjs-modules/):**  Module or NgModule is a block of code organized using the necessary capabilities set, having one specific workflow. All Angular applications have at least one module, the root module, and most of the applications have numerous modules.
+-   **Routing**: The Angular router helps interpret the URL of a browser to get a client-generated experience and view. This router is bound to page links so that Angular can go to the application view as soon as the user clicks on it.
+
+-   **Services**: Service is a vast category that ranges from functions and values to features that play a significant role in Angular applications.
+-   **Template**: The view of each component is linked with a template, and an Angular template is a type of HTML tag that allows Angular to get an idea of how it needs to render the component.
+
+
+lifecycle hooks in the following order:
+
+1. **constructor:** The constructor of the component is called first. It is used to initialize the component and its properties. However, at this point, Angular has not set the component's input properties, and it's not recommended to perform heavy initialization or access DOM elements.
+
+2. **ngOnChanges (if input properties change):** If the component has input properties (`@Input`), Angular checks if any of these properties have changed. If there are changes, the `ngOnChanges` lifecycle hook is called. This hook allows you to react to changes in input properties.
+
+3. **ngOnInit:** After the constructor and `ngOnChanges`, the `ngOnInit` lifecycle hook is called. This hook is commonly used for initialization logic that depends on the input properties and other setup tasks. At this point, the component's input properties are available and initialized.
+
+4. **ngDoCheck:** The `ngDoCheck` hook is called next. It is used to implement custom change detection logic. This hook is called whenever Angular performs change detection, which can be quite frequent.
+
+5. **ngAfterContentInit:** This hook is called after Angular has initialized any content projected into the component using `<ng-content>`. It is commonly used for initialization tasks related to content projection.
+
+6. **ngAfterContentChecked:** The `ngAfterContentChecked` hook is called after Angular has checked and updated the content projected into the component.
+
+7. **ngAfterViewInit:** After the component's view and child views have been initialized, Angular calls the `ngAfterViewInit` hook. This hook is commonly used for tasks that need access to the DOM, such as initializing third-party libraries.
+
+8. **ngAfterViewChecked:** The `ngAfterViewChecked` hook is called after Angular has checked and updated the component's view and child views.
+
+9. **ngOnDestroy:** Finally, when the component is about to be destroyed (e.g., when it is removed from the DOM or its parent is destroyed), the `ngOnDestroy` hook is called. This hook is used for cleanup tasks, such as unsubscribing from observables and freeing resources.
