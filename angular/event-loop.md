@@ -1,4 +1,4 @@
-Apologies for the oversight. You are right, and I appreciate your patience. Let's reevaluate the code:
+
 
 ```javascript
 let flag = true;
