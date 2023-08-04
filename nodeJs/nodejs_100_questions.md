@@ -83,25 +83,13 @@ A callback function is called after a given task. It allows other code to be run
 
 ### 10. Explain the difference between frontend and backend development?
 
-**Front-end**
-
-**Back-end**
-
-Frontend refers to the client-side of an application
-
-Backend refers to the server-side of an application
-
-It is the part of a web application that users can see and interact with
-
-It constitutes everything that happens behind the scenes
-
-It typically includes everything that attributes to the visual aspects of a web application
-
-It generally includes a web server that communicates with a database to serve requests
-
-HTML, CSS, JavaScript, AngularJS, and ReactJS are some of the essentials of frontend development
-
-Java, PHP, Python, and Node.js are some of the backend development technologies 
+| Front-end                        | Back-end                                   |
+|----------------------------------|--------------------------------------------|
+| Refers to the client-side        | Refers to the server-side                 |
+| Users can see and interact with   | Happens behind the scenes                 |
+| Includes visual aspects          | Communicates with a database              |
+| HTML, CSS, JavaScript, AngularJS,| Java, PHP, Python, Node.js                |
+| ReactJS are common technologies   | are common backend development technologies|
 
  
 ### 12. What are the modules in Node.js?
@@ -112,38 +100,20 @@ Modules are like JavaScript libraries that can be used in a Node.js application 
 
 Node.js has many modules to provide the basic functionality needed for a web application. Some of them include:
 
-**Core Modules**
+| Core Modules | Description                                                   |
+|--------------|---------------------------------------------------------------|
+| HTTP         | Includes classes, methods, and events to create a Node.js    |
+|              | HTTP server                                                   |
+| util         | Includes utility functions useful for developers             |
+| fs           | Includes events, classes, and methods to deal with file      |
+|              | I/O operations                                                |
+| url          | Includes methods for URL parsing                             |
+| query string | Includes methods to work with query string                   |
+| stream       | Includes methods to handle streaming data                    |
+| zlib         | Includes methods for compression and decompression using     |
+|              | zlib, gzip, and deflate algorithms                           |
 
-**Description**
-
-HTTP
-
-Includes classes, methods, and events to create a Node.js HTTP server
-
-util
-
-Includes utility functions useful for developers
-
-fs
-
-Includes events, classes, and methods to deal with file I/O operations
-
-url
-
-Includes methods for URL parsing
-
-query string
-
-Includes methods to work with query string
-
-stream
-
-Includes methods to handle streaming data
-
-zlib
-
-Includes methods to compress or decompress files
-
+ 
 ### 13. What is the purpose of the module .Exports?
 
 In Node.js, a module encapsulates all related codes into a single unit of code that can be parsed by moving all relevant functions into a single file. You may export a module with the module and export the function, which lets it be imported into another file with a needed keyword.
@@ -171,25 +141,12 @@ There are two commonly used libraries in Node.js:
 
 ### 18. What are the pros and cons of Node.js?
 
-**Node.js Pros**
-
-**Node.js Cons**
-
-Fast processing and an event-based model
-
-Not suitable for heavy computational tasks
-
-Uses JavaScript, which is well-known amongst developers
-
-Using callback is complex since you end up with several nested callbacks
-
-Node Package Manager has over 50,000 packages that provide the functionality to an application
-
-Dealing with relational databases is not a good option for Node.js
-
-Best suited for streaming huge amounts of data and I/O intensive operations
-
-Since Node.js is single-threaded, CPU intensive tasks are not its strong suit
+| Node.js Pros                                  | Node.js Cons                                               |
+|-----------------------------------------------|------------------------------------------------------------|
+| Fast processing and an event-based model      | Not suitable for heavy computational tasks               |
+| Uses JavaScript, well-known amongst developers| Using callback is complex with nested callbacks          |
+| Node Package Manager with over 50,000 packages| Dealing with relational databases is not ideal           |
+| Best suited for streaming and I/O operations  | Single-threaded nature, weak for CPU intensive tasks     |
 
 
 ### 19. What is the command used to import external libraries?
