@@ -1,5 +1,3 @@
-ere are some React Interview Questions on basic concepts.
-
 ### **1. What are the features of React?**
 
 
