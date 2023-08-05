@@ -238,34 +238,15 @@ We can embed two or more components into one using this method:
 ![classapp-extends](https://www.simplilearn.com/ice9/free_resources_article_thumb/classapp-extends.JPG)
 
 ### **29. What are the differences between class and functional components?**
+ 
+| **Feature**          | **Class Components**                | **Functional Components**             |
+|----------------------|------------------------------------|--------------------------------------|
+| State                | Can hold or manage state           | Cannot hold or manage state          |
+| Simplicity           | Complex as compared to stateless components | Simple and easy to understand      |
+| Lifecycle methods    | Can work with all lifecycle methods | Does not work with any lifecycle method |
+| Reusability          | Can be reused                      | Cannot be reused                     |
 
-**Class Components**
-
-**Functional Components**
-
-State
-
-Can hold or manage state
-
-Cannot hold or manage state
-
-Simplicity
-
-Complex as compared to the stateless component
-
-Simple and easy to understand
-
-Lifecycle methods
-
-Can work with all lifecycle methods
-
-Does not work with any lifecycle method
-
-Reusability
-
-Can be reused
-
-Cannot be reused
+Please note that with the introduction of React Hooks, Functional Components can now also hold and manage state, making them more powerful and widely used compared to Class Components. Additionally, Functional Components can also work with lifecycle methods using certain Hooks, such as `useEffect`.
 
 -   **Class components example:**
 
@@ -315,40 +296,16 @@ Here are some ReactJS Interview Questions on the ReactJS Redux concept.
 
 ![action](https://www.simplilearn.com/ice9/free_resources_article_thumb/action-3.JPG)
 
-### **34. How is Redux different from Flux?**
+### **34. How is Redux different from Flux?** 
 
-**SN**
+| SN  | Redux                                       | Flux                                      |
+|-----|---------------------------------------------|-------------------------------------------|
+| 1.  | Redux is an open-source JavaScript library used to manage application State | Flux is an architecture and not a framework or library |
+| 2.  | Store’s state is immutable                  | Store’s state is mutable                  |
+| 3.  | Can only have a single-store               | Can have multiple stores                  |
+| 4.  | Uses the concept of reducer                | Uses the concept of the dispatcher        |
 
-**Redux**
-
-**Flux**
-
-1.
-
-Redux is an open-source JavaScript library used to manage application State
-
-Flux is an architecture and not a framework or library
-
-2.
-
-Store’s state is immutable
-
-Store’s state is mutable
-
-3.
-
-Can only have a single-store
-
-Can have multiple stores
-
-4.
-
-Uses the concept of reducer
-
-Uses the concept of the dispatcher
-
-So far, if you have any doubts about these React interview questions and answers, please leave your questions in the section below.
-
+If you have any further questions or doubts about these topics, feel free to ask!
 ## **ReactJS Router Questions**
 
 Here are some ReactJS Interview Questions on React Router concepts.
@@ -363,36 +320,15 @@ React Router is a routing library built on top of React, which is used to create
 -   Enables multiple views in a single application by defining multiple routes in the React application.
 
 ### **37. How is React routing different from conventional routing?**
+ 
+| SN  | React Routing                               | Conventional Routing                       |
+|-----|---------------------------------------------|--------------------------------------------|
+| 1.  | Single HTML page                           | Each view is a new HTML file              |
+| 2.  | The user navigates multiple views in the same file | The user navigates multiple files for each view |
+| 3.  | The page does not refresh since it is a single file | The page refreshes every time the user navigates |
+| 4.  | Improved performance                       | Slower performance                         |
 
-**SN**
-
-**React Routing**
-
-**Conventional routing**
-
-1.
-
-Single HTML page
-
-Each view is a new HTML file
-
-2.
-
-The user navigates multiple views in the same file
-
-The user navigates multiple files for each view
-
-3.
-
-The page does not refresh since it is a single file
-
-The page refreshes every time user navigates
-
-4.
-
-Improved performance
-
-Slower performance
+Please note that the comparison mentioned in the table is a generalization and may vary depending on specific use cases and implementations. React Routing is typically known for its ability to create single-page applications (SPAs) that provide smooth user experiences and improved performance by avoiding full-page refreshes, while conventional routing involves loading separate HTML files for each view, leading to slower performance due to the repeated page refreshes.
 
 ### **38. How do you implement React routing?**
 
