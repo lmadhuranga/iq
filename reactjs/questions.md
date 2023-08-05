@@ -211,10 +211,6 @@ We can update the state of a component by using the built-in  **‘setState()’
 
 #### Basics to Advanced - Learn It All!
 
-Caltech PGP Full Stack Development[EXPLORE PROGRAM](https://www.simplilearn.com/pgp-full-stack-web-development-certification-training-course?source=GhPreviewCTABanner)
-
-![Basics to Advanced - Learn It All!](https://www.simplilearn.com/ice9/banners/free_resources_banners/lead_banners/Caltech_PGP_Full_Stack_Development_New.png)
-
 ### **26. What are the differences between state and props?**
 
 |                | State                          | Props                                          |
