@@ -55,26 +55,12 @@ TypeScript helps in **efficiently detecting bugs** and helps in easy compilation
 Using metadata is how we tell Angular how to process a class. When we use a component, it acts as a class unless we tell that it’s a component, and we do this with the help of metadata. Metadata is attached in TypeScript using a decorator. Decorators are functions that know **the configuration of classes and how they are supposed to work.**
 
 ### **8. What is the difference between constructor and ngOnInit?**
+Sure, here's the information presented in a table format:
 
-The difference between constructor and ngOnInit is given below:
-
-**Basis**
-
-**Constructor**
-
-**ngOnInit**
-
-Objective.
-
-The objective of a Constructor is to start class members
-
-**ngOnInit** is used in case of startup/announcement and avoids things to work in builders.
-
-Usage
-
-A Constructor should be used to set up Dependency Injection, Initialization of class fields, etc.
-
-**ngOnInit** is used to write the work code that executes as soon as the class is instantiated. 
+| Basis         | Constructor                                                 | ngOnInit                                                    |
+|---------------|-------------------------------------------------------------|-------------------------------------------------------------|
+| Objective     | The objective of a Constructor is to start class members.   | ngOnInit is used in case of startup/announcement and avoids things to work in builders. |
+| Usage         | A Constructor should be used to set up Dependency Injection, Initialization of class fields, etc. | ngOnInit is used to write the work code that executes as soon as the class is instantiated. |
 
 ### **9. How is Dependency Hierarchy formed?**
 
@@ -117,56 +103,17 @@ A template expression in Angular is an expression that is represented in double 
 The methods or properties in Angular that are used in HTML in response to user events are called template statements. These template statements allow your application to engage users through actions like dynamic content display or form submissions etc.
 
 ### **17. What is the difference between Angular and AngularJS?**
+ 
+| Features        | Angular                                        | AngularJS                               |
+|-----------------|-----------------------------------------------|-----------------------------------------|
+| Architecture    | Uses directives and components               | Supports Model-View-Controller (MVC)    |
+| Language        | Uses TypeScript, a statically-typed language | Uses JavaScript, a dynamically-typed language |
+| Expression Syntax | Uses () for event binding and [] for property binding | Requires ng directives for property and event binding |
+| Mobile Support  | Offers mobile support                         | Does not offer mobile support           |
+| Routing         | Uses @RouteConfig{...}                       | Uses $routeprovider.when()              |
+| Dependency Injection | Supports hierarchical DI and unidirectional tree-based change detection | Does not support dependency injection |
+| Structure       | Simplified structure for easy development and maintenance of large applications | Comparatively less manageable structure |
 
-Following are some of the major and significant differences between  **[Angular and AngularJS](https://intellipaat.com/blog/angularjs-vs-angular-2-vs-angular-4-difference/)**:
-
-**Features**
-
-**Angular**
-
-**AngularJS**
-
-Architecture
-
-It makes use of directives and components
-
-It supports the Model-View-Controller or MVC model
-
-Language
-
-It uses TypeScript language, a superset of JavaScript that is typed statistically
-
-It uses JavaScript, a dynamically typed language
-
-Expression Syntax
-
-Angular uses **()** to bind an event while **[]** to bind a property
-
-It requires professionals to use the correct **ng** directive to bind a property or an event
-
-Mobile Support
-
-Angular offers mobile support
-
-Unlike Angular, AngularJS does not offer mobile support
-
-Routing
-
-It uses **@RouteConfig{(…)}**
-
-It uses **$routeprovider.when()**
-
-Dependency Injection
-
-It supports hierarchical dependency injection, along with a unidirectional tree-based change direction
-
-It does not support dependency injection
-
-Structure
-
-Its simplified structure makes it easy for professionals to develop and maintain large applications easily
-
-It is comparatively less manageable
 
 ### **18. What are some advantages of using Angular?**
 
