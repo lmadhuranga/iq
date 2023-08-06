@@ -1,3 +1,32 @@
+Dependency Injection is a core concept in Angular, and it plays a crucial role in how components, services, and other objects are created and managed within the framework. In an interview, you can explain Dependency Injection in Angular as follows:
+
+Dependency Injection (DI) is a design pattern used in Angular to manage the dependencies between different parts of an application. It is a way to provide the objects that a class needs (its dependencies) instead of having the class create them itself. This allows for loose coupling between components and services, making the code more maintainable, testable, and flexible.
+
+In Angular, DI is achieved through the use of a DI container or an Injector. The Injector maintains a registry of services and their dependencies, and when a component or service needs a dependency, the Injector resolves it and provides it to the requesting object.
+
+The benefits of using Dependency Injection in Angular are:
+
+1. Modular and Reusable Code: With DI, each component or service becomes a standalone, self-contained unit that can be easily reused and replaced in different parts of the application.
+
+2. Testability: DI allows for easy mocking and testing of components and services, making it simpler to write unit tests and ensure the reliability of the application.
+
+3. Flexibility: Components and services can be easily swapped or extended with different implementations, allowing for better flexibility and adaptability to changing requirements.
+
+To implement DI in Angular, you typically use the `@Injectable()` decorator to mark a class as a service, and then you specify its dependencies in the constructor using parameter-based injection. Angular's DI system will take care of providing the correct instances of the dependencies when they are needed.
+
+For example, consider a UserService that needs an instance of an HttpService to make HTTP requests. You would define the UserService as:
+
+```typescript
+@Injectable()
+export class UserService {
+  constructor(private http: HttpService) {
+    // The HttpService instance will be automatically provided by the DI system
+  }
+}
+```
+
+In summary, Dependency Injection in Angular is a powerful pattern that promotes code modularity, testability, and maintainability by providing a way to manage and inject dependencies into classes and services. It is one of the key features that make Angular a robust and developer-friendly framework.
+
 Sure, let's illustrate Angular's dependency injection system with an example. Suppose we are building a simple Angular application that allows users to display and manage a list of tasks. We'll create a service to manage the tasks, and two components: one to display the list of tasks, and another to add new tasks.
 
 1. Task Service:
