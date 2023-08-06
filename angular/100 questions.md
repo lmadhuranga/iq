@@ -1,4 +1,4 @@
-
+  
 ## Angular Basic Questions
 
 Let’s start with the basic Angular questions and answers for freshers.
@@ -245,43 +245,14 @@ CREATE src/app/square.pipe.spec.ts (187 bytes)
 CREATE src/app/square.pipe.ts (217 bytes)
 UPDATE src/app/app.module.ts (2931 bytes)
 
-### **30. What is the difference between pure and impure pipe?**
+### **30. What is the difference between pure and impure pipe?** 
 
-**Basis**
-
-**Pure Pipe**
-
-**Impure Pipe**
-
-**Meaning**
-
-A pure pipe is called when a change in the value or the parameters passed to a pipe is detected by Angular.
-
-In every change detection cycle, regardless of whether there is any change in the value or parameter passed, an impure pipe is invoked.
-
-**Syntax**
-
-```typescript
-import { Pipe, PipeTransform } from '@angular/core';
-
-@Pipe({ name: 'Pipename' })
-export class Pipeclass implements PipeTransform {
-  transform(parameters): returntype {
-    // Implementation of the pipe's transformation logic
-  }
-}
-```
-**Shareability**
-
-Pure pipes can be shared across various usages and that too without having any effect on the output result
-
-Impure Pipes cannot be shared because they might affect the internal state from outside
-
-**Determination of Output change.**
-
-Input values or parameters can determine the output value or the change in it.
-
-Input values cannot determine the output value or the change in it.
+| Basis                         | Pure Pipe                                                                                   | Impure Pipe                                                                              |
+|-------------------------------|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Meaning                       | A pure pipe is called when a change in the value or the parameters passed to a pipe is detected by Angular.                                          | In every change detection cycle, regardless of whether there is any change in the value or parameter passed, an impure pipe is invoked.  |
+| Syntax                        | @Pipe({ name: ‘filterPipe’, pure: true }) export class FilterPipe {}                      | @Pipe({ name: ‘filterPipe’, pure: false }) export class FilterPipe                       |
+| Shareability                  | Pure pipes can be shared across various usages and that too without having any effect on the output result.                                         | Impure Pipes cannot be shared because they might affect the internal state from outside. |
+| Determination of Output change | Input values or parameters can determine the output value or the change in it.            | Input values cannot determine the output value or the change in it.                     |
 
 ### **31. What is a bootstrapping module?**
 
