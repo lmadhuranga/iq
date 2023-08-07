@@ -122,3 +122,36 @@ By using `async/await`, the code appears more synchronous and easier to read. Th
 If any error occurs during the API calls, it will be caught in the `catch` block, and the error will be logged to the console.
 
 Using modern JavaScript features like `async/await` provides a more expressive and intuitive way to handle asynchronous operations and improves the readability of your code.
+
+
+When using `Promise.all`, if any of the promises in the array get rejected (i.e., an error occurs), the whole `Promise.all` operation will reject immediately. This behavior is by design to ensure that you are aware of any failed requests or operations.
+
+However, if you want to handle the errors of individual promises while allowing the other promises to continue processing, you can use `Promise.allSettled`. The `Promise.allSettled` method returns a promise that resolves with an array of results after all the given promises have either fulfilled or rejected. Unlike `Promise.all`, `Promise.allSettled` does not short-circuit on the first rejection, and all the promises are allowed to complete.
+
+Here's an example of how to use `Promise.allSettled`:
+
+```javascript
+const promises = [
+  fetch('url1').then(response => response.json()).catch(error => ({ error: true, message: error.message })),
+  fetch('url2').then(response => response.json()).catch(error => ({ error: true, message: error.message })),
+  fetch('url3').then(response => response.json()).catch(error => ({ error: true, message: error.message })),
+  // Add more promises as needed
+];
+
+Promise.allSettled(promises)
+  .then(results => {
+    // `results` is an array of objects representing the settlement of each promise
+    results.forEach(result => {
+      if (result.status === 'fulfilled') {
+        console.log('Fulfilled:', result.value);
+      } else {
+        console.error('Rejected:', result.reason);
+      }
+    });
+  })
+  .catch(error => {
+    console.error('Error occurred during Promise.allSettled:', error);
+  });
+```
+
+By using `Promise.allSettled`, you can process the results of each individual promise regardless of whether they succeeded or failed. This way, you can continue handling the other requests even if some of them fail.
