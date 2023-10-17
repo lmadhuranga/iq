@@ -16,7 +16,7 @@ Redux is a predictable state container for JavaScript apps. It follows the Flux 
 **Example 1: Counter using Redux**
 
 Let's take a look at a simple Redux counter implementation:
-
+```javascript
 // Action Type
 const INCREMENT = 'INCREMENT';
 const DECREMENT = 'DECREMENT';
@@ -48,12 +48,12 @@ console.log(store.getState()); // Output: 1
 store.dispatch(decrement());
 console.log(store.getState()); // Output: 0s
 
-  
+  ```
 
 **Example 2: Todo List using Redux**
 
 Let's consider a Todo List implementation using Redux:
-
+```javascript
 // Action Type
 const ADD_TODO = 'ADD_TODO';
 const TOGGLE_TODO = 'TOGGLE_TODO';
@@ -94,7 +94,7 @@ store.dispatch(addTodo('Buy groceries'));
 store.dispatch(addTodo('Clean the house'));
 store.dispatch(toggleTodo(1));
 console.log(store.getState()); // Output: [{ id: 1, text: 'Buy groceries', completed: true }, { id: 2, text: 'Clean the house', completed: false }]s
-
+```
   
 
 ### Introducing Redux Toolkit
@@ -106,7 +106,7 @@ While Redux is powerful, it requires writing a lot of boilerplate code to set up
 **Example 1: Counter using Redux Toolkit**
 
 Now, let's rewrite the previous counter example using Redux Toolkit:
-
+```javascript
 import { createSlice, configureStore } from '@reduxjs/toolkit'
 
 // Slice
@@ -128,13 +128,13 @@ console.log(store.getState()); // Output: 1
 
 store.dispatch(counterSlice.actions.decrement());
 console.log(store.getState()); // Output: 0;
-
+```
   
 
 **Example 2: Todo List using Redux Toolkit**
 
 Let's consider a Todo List implementation using Redux Toolkit:
-
+```javascript
 import { createSlice, configureStore } from '@reduxjs/toolkit'
 
 // Slice
@@ -163,7 +163,7 @@ store.dispatch(todoSlice.actions.addTodo({ id: 1, text: 'Buy groceries' }));
 store.dispatch(todoSlice.actions.addTodo({ id: 2, text: 'Clean the house' }));
 store.dispatch(todoSlice.actions.toggleTodo(1));
 console.log(store.getState()); // Output: [{ id: 1, text: 'Buy groceries', completed: true }, { id: 2, text: 'Clean the house', completed: false }];
-
+```
 ----------
 
 ### Advantages of Redux Toolkit
