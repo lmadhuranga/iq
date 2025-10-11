@@ -133,13 +133,13 @@ sessionStorage.clear();
     
 
 ---------- 
-![enter image description here](https://raw.githubusercontent.com/lmadhuranga/iq/main/localstorage-cookies-session.png)
+![enter image description here](https://raw.githubusercontent.com/lmadhuranga/iq/refs/heads/main/temp/localstorage-cookies-session.png)
  
 
 ----------
 
 ## 🧰 Example Real-world Use Case
-![enter image description here](https://raw.githubusercontent.com/lmadhuranga/iq/main/localstorage-cookies-session2.png)
+![enter image description here](https://raw.githubusercontent.com/lmadhuranga/iq/refs/heads/main/temp/localstorage-cookies-session2.png)
  
 
 ----------
@@ -434,7 +434,7 @@ public class AuthController {
 ----------
 
 ## 🧩 Cookie Flags Summary
-![enter image description here](https://raw.githubusercontent.com/lmadhuranga/iq/main/localstorage-cookies-session3.png)
+![enter image description here](https://raw.githubusercontent.com/lmadhuranga/iq/refs/heads/main/temp/localstorage-cookies-session3.png)
  
 Controls cookie lifespan
 
