@@ -1,12 +1,17 @@
+
+
 ```text
 ====================================================
-TypeORM Relations in NestJS (ASCII Diagram Reference)
+Todos App – TypeORM Relations (Simple & Clean)
 ====================================================
 ```
+
+---
+
 ```text
-========================
-1) One-to-One
-========================
+----------------------------------------------------
+1️⃣ ONE-TO-ONE (User ↔ Profile)
+----------------------------------------------------
 ```
 
 ```ts
@@ -14,62 +19,75 @@ TypeORM Relations in NestJS (ASCII Diagram Reference)
 @OneToOne(() => Profile)
 @JoinColumn()
 profile: Profile;
+```
 
+```ts
 // Profile
 @OneToOne(() => User, (user) => user.profile)
 user: User;
 ```
 
 ```text
-+---------------------+      +---------------------+
-| users               |      | profiles            |
-+---------------------+      +---------------------+
-| id (PK)             |<---->| id (PK)             |
-| name                |      | bio                 |
-| email               |      | avatar              |
-| profileId (FK)      |      | userId (FK, UNIQUE) |
-+---------------------+      +---------------------+
++---------------------+          +---------------------+
+| users               |          | profiles            |
++---------------------+          +---------------------+
+| id (PK)             |<---------| userId (FK, UNIQUE) |
+| name                |          | id (PK)             |
+| email               |          | bio                 |
+| isActive            |          | avatar              |
+| created             |          +---------------------+
+| updated             |
++---------------------+
 ```
 
+---
+
 ```text
-========================
-2) One-to-Many / Many-to-One
-========================
+----------------------------------------------------
+2️⃣ ONE-TO-MANY (User → Todos)
+----------------------------------------------------
 ```
 
 ```ts
 // User
 @OneToMany(() => Todo, (todo) => todo.user)
 todos: Todo[];
+```
 
+```ts
 // Todo
 @ManyToOne(() => User, (user) => user.todos)
 user: User;
 ```
 
 ```text
-+---------------------+      +----------------------+
-| users               |      | todos                |
-+---------------------+      +----------------------+
-| id (PK)             |<-----| id (PK)              |
-| name                |      | title                |
-| email               |      | note                 |
-|                     |      | userId (FK)          |
-+---------------------+      | isComplete           |
-                             +----------------------+
++---------------------+          +---------------------+
+| users               |          | todos               |
++---------------------+          +---------------------+
+| id (PK)             |<---------| userId (FK)         |
+| name                |          | id (PK)             |
+| email               |          | title               |
+| isActive            |          | note                |
+| created             |          | isComplete          |
+| updated             |          +---------------------+
++---------------------+
 ```
 
+---
+
 ```text
-========================
-3) Many-to-Many
-========================
+----------------------------------------------------
+3️⃣ MANY-TO-MANY (Users ↔ Todos)
+----------------------------------------------------
 ```
 
 ```ts
 // User
 @ManyToMany(() => Todo, (todo) => todo.users)
 todos: Todo[];
+```
 
+```ts
 // Todo
 @ManyToMany(() => User, (user) => user.todos)
 @JoinTable()
@@ -84,8 +102,19 @@ users: User[];
 | name                |      | todoId (FK)         |      | title                |
 | email               |      | (userId,todoId PK)  |      | note                 |
 | isActive            |      +---------------------+      | isComplete           |
-| createdAt           |                                     +----------------------+
-| updatedAt           |
+| created             |                                     +----------------------+
+| updated             |
 +---------------------+
 ```
 
+---
+
+```text
+----------------------------------------------------
+Quick Mapping (Todos App)
+----------------------------------------------------
+User Profile        → One-to-One
+Personal Todos      → One-to-Many
+Shared / Team Todos → Many-to-Many
+```
+  
