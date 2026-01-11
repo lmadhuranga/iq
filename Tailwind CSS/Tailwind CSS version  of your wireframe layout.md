@@ -1,3 +1,6 @@
+<img width="832" height="633" alt="image" src="https://github.com/user-attachments/assets/9a1f8b4b-c0b1-43ff-82b0-c50d94c96c6a" />
+
+
 Perfect 👍
 Here is the **clean Tailwind CSS version** of your wireframe layout.
 This matches the structure **1:1** and is **ready for React / Next.js**.
