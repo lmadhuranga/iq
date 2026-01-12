@@ -16,7 +16,7 @@ Todos App – TypeORM Relations (Simple & Clean)
 
 ```ts
 // User
-@OneToOne(() => Profile)
+@OneToOne(() => Profile, profile => profile.user)
 @JoinColumn()
 profile: Profile;
 ```
