@@ -12,14 +12,11 @@ This matches the structure **1:1** and is **ready for React / Next.js**.
 ### 1️⃣ HTML / JSX Structure
 
 ```html
-<div class="w-full h-screen border-2 border-black rounded-2xl overflow-hidden">
-  
+<div class="h-screen overflow-hidden rounded-2xl border-2 border-black">
   <!-- Header -->
-  <header class="h-[70px] border-b-2 border-black flex items-center justify-between px-6">
+  <header class="flex h-[70px] items-center justify-between border-b-2 border-black px-6">
     <div>Home</div>
-    <div class="border-2 border-black rounded-lg px-6 py-2">
-      Logo
-    </div>
+    <div class="rounded-lg border-2 border-black px-6 py-2">Logo</div>
   </header>
 
   <!-- Body -->
@@ -35,31 +32,32 @@ This matches the structure **1:1** and is **ready for React / Next.js**.
       </ul>
     </aside>
 
-    <!-- Main Content -->
-    <main class="flex-1 p-5 flex flex-col space-y-5">
+    <!-- Main -->
+    <main class="flex flex-1 flex-col">
       
       <!-- Sub header -->
-      <section class="h-[80px] border-2 border-black flex items-center justify-center">
+      <section class="flex h-[80px] items-center justify-center border-b-2 border-black">
         Sub header
       </section>
 
-      <!-- Large Sub header -->
-      <section class="h-[160px] border-2 border-black flex items-center justify-center">
+      <!-- Large sub header -->
+      <section class="flex h-[160px] items-center justify-center border-b-2 border-black">
         Sub header
       </section>
 
       <!-- Bottom grid -->
-      <section class="flex-1 grid grid-cols-3 gap-5">
-        <div class="border-2 border-black flex items-center justify-center">
+      <section class="grid flex-1 grid-cols-3">
+        <div class="flex items-center justify-center border-r-2 border-b-2 border-black">
           List
         </div>
-        <div class="border-2 border-black"></div>
-        <div class="border-2 border-black"></div>
+        <div class="border-r-2 border-b-2 border-black"></div>
+        <div class="border-b-2 border-black"></div>
       </section>
 
     </main>
   </div>
 </div>
+
 ```
 
 ---
