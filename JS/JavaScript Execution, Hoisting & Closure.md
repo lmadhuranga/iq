@@ -237,21 +237,5 @@ for (let z = 0; z < 3; z++) {
 | IIFE              | Creates new scope        |
 
 ---
-
-## 🎯 Flydubai Interview One-Line Answers
-
-* “`var` is hoisted but initialized as undefined.”
-* “Function declarations are fully hoisted.”
-* “Closures capture variables by reference.”
-* “`var` causes shared state in async loops.”
-
----
-
-If you want next:
-
-* 🔥 **More closure traps**
-* 🔥 **React + closure bugs**
-* 🔥 **15-minute Flydubai mock interview**
-* 🔥 **Execution context diagram**
-
+ 
 Just say **NEXT** 🚀
