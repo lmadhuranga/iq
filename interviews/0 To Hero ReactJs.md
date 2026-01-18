@@ -1,10 +1,7 @@
 
 # 📘 React Interview
 
-
-
 ## 🔹 1. React Basics
-
 
 ### - Why use React?
 > React makes UI predictable, component-based, fast (Virtual DOM), and easy to scale.
@@ -207,7 +204,7 @@ useEffect(() => {
 
 ---
 
-### - `useEffect([])` (componentDidMount behavior)
+### - `useEffect(()=>{},[])` (componentDidMount behavior)
 
 > Runs **only once** after the initial render.
 
@@ -219,14 +216,14 @@ useEffect(() => {
 
 ---
 
-### - `useEffect([])` with state update (⚠️ Infinite loop example)
+### - `useEffect(()=>{})` with state update (⚠️ Infinite loop example)
 
 > Updating state inside an effect that runs on mount **causes re-render → effect runs again**.
 
 ```js
 useEffect(() => {
   setCount(c => c + 1);
-}, []);
+});
 ```
 
 **Flow**
@@ -700,6 +697,12 @@ React.lazy(() => import('./Page'))
 
 ### - When React becomes slow?
 > Large lists, heavy re-renders, bad context usage.
+```
+-   Virtualize lists so only visible items render (react-window / react-virtualized)
+-   Paginate / infinite scroll instead of rendering 5000 rows
+-   Avoid rendering heavy components inside each row
+-   Memoize row components (`React.memo`) and pass stable props
+```
 ---
 
 ## 🔹 10. Routing
