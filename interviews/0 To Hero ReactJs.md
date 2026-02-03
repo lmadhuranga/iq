@@ -892,3 +892,110 @@ React = UI
 Redux/Zustand = App State
 React Query = Server State
 ```
+ 
+---
+
+## 1️⃣ JavaScript Currying (with real intuition)
+
+### What is currying?
+
+**Currying = breaking a function with multiple arguments into a chain of single-argument functions.**
+
+Instead of:
+
+```js
+sum(a, b, c)
+```
+
+You do:
+
+```js
+sum(a)(b)(c)
+```
+
+### Simple example
+
+```js
+function add(a) {
+  return function (b) {
+    return function (c) {
+      return a + b + c;
+    };
+  };
+}
+
+add(1)(2)(3); // 6
+```
+
+### Why do we even need this?
+
+Currying helps with:
+
+* **Reusability**
+* **Partial application**
+* **Cleaner functional composition**
+
+### Real-world example (React / JS)
+
+```js
+const hasRole = role => user => user.role === role;
+
+const isAdmin = hasRole("admin");
+
+isAdmin({ role: "admin" }); // true
+```
+
+💡 **Interview one-liner**:
+
+> “Currying allows partial application of functions, making code more reusable and composable, especially in functional programming and React utilities.”
+
+---
+
+## 4️⃣ React Execution Order (must-know)
+
+### Initial render flow
+
+1. **Function component runs**
+2. JSX is returned
+3. DOM is painted
+4. `useLayoutEffect`
+5. Browser paints
+6. `useEffect`
+
+### Example
+
+```js
+function App() {
+  console.log("render");
+
+  useLayoutEffect(() => {
+    console.log("layout effect");
+  });
+
+  useEffect(() => {
+    console.log("effect");
+  });
+
+  return <div>Hello</div>;
+}
+```
+
+### Output order
+
+```
+render
+layout effect
+effect
+```
+
+### Why this matters
+
+* `useLayoutEffect` → DOM measurements, sync updates
+* `useEffect` → API calls, subscriptions
+
+💡 **Interview one-liner**:
+
+> “React renders first, commits DOM changes, runs layout effects synchronously, paints the screen, then runs effects asynchronously.”
+
+---
+ 
