@@ -20,6 +20,17 @@ console.log('x4 ' ,x)
 */
 ```
 
+```
+function heavy() {
+  // heavy work here
+  new Array(1e6).fill("data");
+
+  return function () {
+    console.log("using data");
+  };
+}
+```
+
 
 Alright — here are **full solutions step-by-step** (with clean recursion + explanations + complexity).
 I’ll keep each one **interview-ready**.
