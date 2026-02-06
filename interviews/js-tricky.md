@@ -20,7 +20,7 @@ console.log('x4 ' ,x)
 */
 ```
 
-```
+```js
 function heavy() {
   // heavy work here
   new Array(1e6).fill("data");
