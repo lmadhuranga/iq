@@ -20,18 +20,64 @@ Old request may finish later and overwrite latest user.
 ### ✅ Fix (AbortController)
 
 ```jsx
-useEffect(() => {
-  const controller = new AbortController();
+import React, { useEffect, useState, useCallback } from 'react'
 
-  fetch(`/api/user/${id}`, { signal: controller.signal })
-    .then(r => r.json())
-    .then(setUser)
-    .catch(e => {
-      if (e.name !== "AbortError") throw e;
-    });
+function SimpleDebounce() {
+  const [value, setValue] = useState('')
+  const [data, setData] = useState([])
 
-  return () => controller.abort();
-}, [id]);
+  const fetchData = useCallback(async (search, signal) => {
+    try {
+      const res = await fetch(
+        `https://jsonplaceholder.typicode.com/users?name_like=${search}`,
+        { signal }
+      )
+      const json = await res.json()
+      setData(json)
+    } catch (err) {
+      // Ignore abort errors
+      if (err.name !== 'AbortError') {
+        console.error(err)
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!value) {
+      setData([])
+      return
+    }
+
+    const controller = new AbortController()
+
+    const timer = setTimeout(() => {
+      fetchData(value, controller.signal)
+    }, 1000)
+
+    return () => {
+      clearTimeout(timer)
+      controller.abort() // 🔥 abort previous request
+    }
+  }, [value, fetchData])
+
+  return (
+    <div>
+      <input
+        value={value}
+        onChange={e => setValue(e.target.value)}
+        placeholder="Search..."
+      />
+
+      <ul>
+        {data.map(user => (
+          <li key={user.id}>{user?.name ?? ''}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export default SimpleDebounce
 ```
 
 ---
