@@ -27,7 +27,7 @@ They check:
 ### 🔹 `TicTacToe.jsx`
 
 ```jsx
-import { useState } from "react";
+import React, { useState } from "react";
 
 const winningCombinations = [
   [0, 1, 2],
