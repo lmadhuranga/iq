@@ -20,18 +20,20 @@ I’ll also mark **INTERVIEW KEY POINT** so you know what to say.
 ## 1️⃣ Question 1 – Child re-render & handler definition
 
 ```jsx
-const Child = {
-  console.log("Child rendered");
-  return <button onClick={onClick}>Click</button>;
-});
+  const Child = () => {
+    console.log("Child rendered");
+    return(<button onClick={onClick}>Click</button>);
+  }
 
-const Parent = () => {
-  const handleClick = {
-    console.log("clicked");
-  }, []);
+  const Parent = () => {
+    
+    const handleClick = useCallback(()=> {
+      console.log("clicked");
+    }, []);
+  
+    return <Child onClick={handleClick} />;
+  };
 
-  return <Child onClick={handleClick} />;
-};
 ```
 
 ### ❌ Problems
