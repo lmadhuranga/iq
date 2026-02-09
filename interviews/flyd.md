@@ -27,9 +27,9 @@ I’ll also mark **INTERVIEW KEY POINT** so you know what to say.
 
   const Parent = () => {
     
-    const handleClick = useCallback(()=> {
+    const handleClick = ()=> {
       console.log("clicked");
-    }, []);
+    }
   
     return <Child onClick={handleClick} />;
   };
