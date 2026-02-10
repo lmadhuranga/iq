@@ -37,11 +37,8 @@ I’ll also mark **INTERVIEW KEY POINT** so you know what to say.
 ```
 
 ### ❌ Problems
-
-1. `Child` is **not a component**
-2. `handleClick` is **not a function**
-3. `useCallback` syntax is missing
-4. `onClick` is **undefined inside Child**
+ 
+3. `useCallback` syntax is missing 
 
 ### ✅ Correct Version
 
