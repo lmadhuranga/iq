@@ -1,0 +1,245 @@
+{
+  "profile": {
+    "identity": "Senior Fullstack Engineer transitioning toward AI-Integrated Systems Architect",
+    "source": "Madhuranga Project Folder Conversations",
+    "confidence_model": "Conversation-Derived Signals"
+  },
+  "skills": {
+    "javascript": {
+      "core_language": [
+        "Closures",
+        "Lexical Scope",
+        "ES6+ Syntax",
+        "Arrow Functions",
+        "Spread Operator",
+        "Destructuring",
+        "Array Methods",
+        "Class Syntax"
+      ],
+      "execution_model": [
+        "Execution Context",
+        "State Persistence via Closure",
+        "Constructor Behavior",
+        "Instance Creation"
+      ],
+      "functional_patterns": [
+        "Throttle Implementation",
+        "Higher-Order Functions",
+        "Function Wrapping",
+        "Argument Forwarding"
+      ]
+    },
+    "typescript": {
+      "core_types": [
+        "Basic Type Annotations",
+        "Type Inference",
+        "Function Typing",
+        "Interface Usage"
+      ],
+      "react_typescript": [
+        "Typed Functional Components",
+        "Props Typing",
+        "State Typing",
+        "Typed Redux Flow"
+      ],
+      "architecture_thinking": [
+        "Schema Modeling",
+        "Contract-First Thinking",
+        "Structured JSON Design"
+      ]
+    },
+    "react": {
+      "core_concepts": [
+        "Functional Components",
+        "JSX",
+        "Props Flow",
+        "State Management",
+        "Conditional Rendering"
+      ],
+      "hooks": [
+        "useState",
+        "useRef",
+        "Custom Hook Awareness"
+      ],
+      "rendering_internals": [
+        "Virtual DOM",
+        "Reconciliation",
+        "Fiber Architecture",
+        "Re-render Triggers"
+      ],
+      "state_architecture": [
+        "Redux Flow",
+        "Unidirectional Data Flow",
+        "Global vs Local State Strategy"
+      ],
+      "performance": [
+        "Render Optimization",
+        "SSR vs CSR vs SSG Awareness"
+      ]
+    },
+    "nodejs": {
+      "runtime_model": [
+        "Event-Driven Architecture",
+        "Asynchronous Execution Model",
+        "Non-Blocking I/O Awareness"
+      ],
+      "backend_architecture": [
+        "Layered Architecture",
+        "Separation of Concerns",
+        "Modular Backend Design"
+      ],
+      "api_design": [
+        "RESTful API Modeling",
+        "Structured JSON Contracts"
+      ],
+      "async_messaging": [
+        "Event-Based Systems",
+        "Message Broker Awareness"
+      ]
+    },
+    "system_design": {
+      "architecture_patterns": [
+        "Microservices Thinking",
+        "Modular System Design",
+        "Multi-Tenant Awareness"
+      ],
+      "event_driven": [
+        "Decoupled Service Communication",
+        "Asynchronous Workflow Modeling"
+      ],
+      "state_modeling": [
+        "Deterministic State Transitions",
+        "Predictable System Modeling"
+      ],
+      "tradeoff_analysis": [
+        "SSR vs CSR Trade-offs",
+        "Performance vs Complexity Decisions"
+      ]
+    },
+    "ai_llm_engineering": {
+      "llm_foundations": [
+        "LLM Behavior Modeling",
+        "Prompt-Driven Reasoning",
+        "Stateless vs Stateful Interaction"
+      ],
+      "agent_architecture": [
+        "Agent vs Agentic System Design",
+        "Planner-Executor-Critic Model",
+        "Task Decomposition"
+      ],
+      "memory_modeling": [
+        "Skill Memory Structuring",
+        "Taxonomy Design",
+        "LLM Import Optimization"
+      ],
+      "workflow_design": [
+        "Multi-Step Reasoning",
+        "Goal-Oriented Execution",
+        "Iterative Improvement Loops"
+      ]
+    },
+    "database": {
+      "data_modeling": [
+        "Structured JSON Modeling",
+        "Schema-Based Thinking",
+        "Entity Relationship Awareness"
+      ],
+      "relational_awareness": [
+        "Normalization Mindset",
+        "Layered Persistence Architecture"
+      ],
+      "nosql_awareness": [
+        "Document-Oriented Modeling",
+        "Flexible Schema Thinking"
+      ],
+      "data_flow": [
+        "Backend-Frontend Payload Structuring",
+        "Scalable Persistence Thinking"
+      ]
+    },
+    "devops_engineering_process": {
+      "ci_cd_awareness": [
+        "Continuous Integration Mindset",
+        "Deployment Pipeline Awareness"
+      ],
+      "version_control": [
+        "Git Workflow Awareness",
+        "Structured Change Management"
+      ],
+      "production_mindset": [
+        "Scalability Thinking",
+        "Performance-Aware Deployment"
+      ],
+      "distributed_systems": [
+        "Async Processing Strategy",
+        "Decoupled Architecture Awareness"
+      ]
+    },
+    "performance_engineering": {
+      "frontend_performance": [
+        "Re-render Optimization Awareness",
+        "Component Update Cost Analysis"
+      ],
+      "execution_control": [
+        "Throttle Pattern",
+        "Time-Based Execution Control"
+      ],
+      "backend_performance": [
+        "Async Workload Separation",
+        "Scalable API Thinking"
+      ],
+      "optimization_mindset": [
+        "Bottleneck Awareness",
+        "Trade-Off Evaluation"
+      ]
+    },
+    "html_css": {
+      "html_structure": [
+        "Semantic Layout Awareness",
+        "Container Hierarchy Modeling"
+      ],
+      "css_layout": [
+        "Flexbox Layout",
+        "Alignment Strategies",
+        "Margin Auto Behavior Understanding"
+      ],
+      "visual_modeling": [
+        "Proportional Layout Thinking",
+        "Box Model Awareness"
+      ]
+    },
+    "interview_communication": {
+      "technical_explanation": [
+        "Layered Concept Explanation",
+        "Comparative Reasoning",
+        "Architecture Breakdown"
+      ],
+      "concept_framing": [
+        "Scenario-Based Explanation",
+        "Interview Narrative Construction"
+      ],
+      "structured_thinking": [
+        "Taxonomy-Based Knowledge Modeling",
+        "Hierarchical Structuring"
+      ],
+      "meta_learning": [
+        "Level-Based Skill Reinforcement",
+        "Self-Assessment Awareness"
+      ]
+    },
+    "personal_branding_strategy": {
+      "technical_positioning": [
+        "Skill Framing for Market",
+        "LinkedIn Optimization Thinking"
+      ],
+      "visual_branding": [
+        "Technical Banner Structuring",
+        "Visual Identity Refinement"
+      ],
+      "content_strategy": [
+        "Algorithm-Aware Captioning",
+        "Narrative Framing"
+      ]
+    }
+  }
+}
