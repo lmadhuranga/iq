@@ -4,9 +4,10 @@ function App() {
   const [count, setCount] = useState(0);
 
   const users = [
-    { id: 1, name: "Alice", age: 22 },
+    { id: 1, name: "Alice", age: 25 },
     { id: 2, name: "Bob", age: 17 },
-    { id: 3, name: "Charlie", age: 25 }
+    { id: 3, name: "Charlie", age: 32 },
+    { id: 4, name: "Mad", age: 22 }
   ];
 
   // Task:
@@ -31,15 +32,12 @@ function App() {
       <h2>Eligible Users</h2>
       <ul>
         {filteredSortedUsers.map(user => (
-          <li key={user.id}>{user.name}</li>
+          <li key={user.id}>{user.name} > {user.age}</li>
         ))}
       </ul>
     </div>
   );
 }
 
-export default App;
-
-
-
+export default App;  
 ```
